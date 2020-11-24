@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bienvenido
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <strong>Hola, <br>¿en que te puedo ayudar el dia de hoy?</strong>
+    <br>
+    <br>
+    <ion-button expand="block" color="primary" [routerLink]="['/client/new-post']">Registrar nuevo alojamiento</ion-button>
+    <br>
+    <ion-button expand="block" color="primary" [routerLink]="['/client/posts']">Revisar mis alojamientos</ion-button>
+    <br>
+    <br>
+    <ion-button expand="block" color="light" [routerLink]="['/client/profile']">Confirguraciones</ion-button>
+    <ion-button expand="block" color="danger" [routerLink]="['/auth/login']">Salir</ion-button>
+  </div>
+</ion-content>

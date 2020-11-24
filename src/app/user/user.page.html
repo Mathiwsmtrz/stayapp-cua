@@ -1,0 +1,123 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bienvenido
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-list-header>
+              Plan actual
+            </ion-list-header>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="/assets/hotel.jpg">
+              </ion-avatar>
+              <ion-label>
+                <h2>Habitacion individual en casa familiar</h2>
+                <h3>Barrio San Isidro</h3>
+                <ion-button expand="block" color="warning" [routerLink]="['/user/finder']">Cambiar plan</ion-button> 
+              </ion-label>
+            </ion-item>
+          </ion-list>
+          <ion-list>
+            <ion-list-header>
+              Ultimos pagos
+            </ion-list-header>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="/assets/hotel.jpg">
+              </ion-avatar>
+              <ion-label>
+                Diciembre
+                <p>14-12-2020</p>
+              </ion-label>
+              <ion-chip slot="end" color="dark">
+                <ion-icon name="time-outline"></ion-icon>
+                <ion-label>$ 400.000</ion-label>
+              </ion-chip>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="/assets/hotel.jpg">
+              </ion-avatar>
+              <ion-label>
+                Noviembre
+                <p>14-11-2020</p>
+              </ion-label>
+              <ion-chip slot="end" color="success">
+                <ion-icon name="checkmark-done-outline"></ion-icon>
+                <ion-label>
+                  $ 400.000
+                  <p><ion-icon name="card-outline"></ion-icon> ****-6755</p>
+                </ion-label>
+              </ion-chip>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="/assets/hotel.jpg">
+              </ion-avatar>
+              <ion-label>
+                Octubre
+                <p>15-10-2020</p>
+              </ion-label>
+              <ion-chip slot="end" color="success">
+                <ion-icon name="checkmark-done-outline"></ion-icon>
+                <ion-label>
+                  $ 400.000
+                  <p><ion-icon name="card-outline"></ion-icon> ****-6755</p>
+                </ion-label>
+              </ion-chip>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="/assets/hotel.jpg">
+              </ion-avatar>
+              <ion-label>
+                Octubre
+                <p>14-10-2020</p>
+              </ion-label>
+              <ion-chip slot="end" color="danger">
+                <ion-icon name="checkmark-done-outline"></ion-icon>
+                <ion-label>
+                  $ 400.000
+                  <p><ion-icon name="card-outline"></ion-icon> ****-1578</p>
+                </ion-label>
+              </ion-chip>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="/assets/hotel.jpg">
+              </ion-avatar>
+              <ion-label>
+                Septiembre
+                <p>14-09-2020</p>
+              </ion-label>
+              <ion-chip slot="end" color="success">
+                <ion-icon name="checkmark-done-outline"></ion-icon>
+                <ion-label>
+                  $ 400.000
+                  <p><ion-icon name="card-outline"></ion-icon> ****-1578</p>
+                </ion-label>
+              </ion-chip>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <br>
+      <br>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="light" [routerLink]="['/user/profile']">Confirguraciones</ion-button> <br>
+          <ion-button expand="block" color="danger" [routerLink]="['/auth/login']">Salir</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "stayapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

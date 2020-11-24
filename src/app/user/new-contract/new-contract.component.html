@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Contrato
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-thumbnail slot="end">
+              <img src="/assets/hotel.jpg">
+            </ion-thumbnail>
+            <ion-label>
+              <h3>Lorem ipsum</h3>
+              <p>dolor sit amet</p>
+              <p>consectetur adipiscing elit. Duis ut urna neque.</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-chip>
+              <ion-icon name="bed-outline"></ion-icon>
+              <ion-label>Cama doble</ion-label>
+            </ion-chip>
+            <ion-chip>
+              <ion-icon name="color-fill-outline"></ion-icon>
+              <ion-label>Baño interno</ion-label>
+            </ion-chip>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Precio por mes</ion-label>
+            <ion-input placeholder="$ 400.000" disabled></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Fecha inicio del contrato</ion-label>
+            <ion-datetime display-timezone="utc"></ion-datetime>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Perido</ion-label>
+            <ion-select>
+              <ion-select-option>Mensual</ion-select-option>
+              <ion-select-option>Trimestre</ion-select-option>
+              <ion-select-option>Semestral</ion-select-option>
+              <ion-select-option>Anual</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Fecha finalizacion</ion-label>
+            <ion-input placeholder="DD/MM/YYYY" disabled></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Nota</ion-label>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+          <br>
+          <br>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-button expand="block" color="light" [routerLink]="['/user/posts/1']">Cancelar</ion-button>
+        </ion-col>
+        <ion-col size="8">
+          <ion-button expand="block" color="primary" [routerLink]="['/user']">Contratar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
